@@ -8,12 +8,9 @@ using UnityEngine;
 //It keeps track of its direction (wasd)
 public class WindProperties : MonoBehaviour
 {
-    //I don't know that we need to keep track whether the wind is active, it just pushes when it is
-    //The spell handler will just call push on the wind object
-    public bool active;
-
-    public List<GameObject> objectsInside;
-    public float strength = 10f;
+    //public List<GameObject> objectsInside;
+    public float strength;
+    public Vector3 size;
 
     // Start is called before the first frame update
     void Start()
@@ -29,10 +26,13 @@ public class WindProperties : MonoBehaviour
     }
 
     //move all the objects inside in the direction you pass in
-    public void Push(Vector2 direction)
-    { 
-        foreach (GameObject obj in objectsInside) 
+    public void Push(Vector3 direction)
+    {
+        //new way. check what to push when its time to push. This also pushes the player though most likely
+        Collider2D[] toPush = Physics2D.OverlapBoxAll(transform.position, size, 0f);
+        foreach (Collider2D collision in toPush) 
         {
+            GameObject obj = collision.gameObject;
             if (obj.TryGetComponent<Rigidbody2D>(out var body))
             {
                 body.AddRelativeForce(direction * strength);
@@ -40,6 +40,8 @@ public class WindProperties : MonoBehaviour
         }
     }
 
+    //old way, hold when something collides with the persistent box
+    /*
     //Keeps track of what items are within the bounds of the wind box
     public void OnTriggerEnter2D(Collider2D collision)
     {
@@ -62,4 +64,5 @@ public class WindProperties : MonoBehaviour
             Debug.Log("Objects inside wind box:" + objectsInside.Count);
         }
     }
+    */
 }
