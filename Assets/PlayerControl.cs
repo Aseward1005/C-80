@@ -5,10 +5,10 @@ using UnityEngine;
 public class PlayerControl : MonoBehaviour
 {
     private float horizontal;
-    private float speed = 8f;
-    private float jumpPower = 15f; 
-    private float acceleration;
-    private float targetSpeed = 20f;
+    public float speed = 8f;
+    public float jumpPower = 15f; 
+    public float acceleration;
+    public float targetSpeed = 20f;
     private bool IsFacingRight;
 
     [SerializeField] private Rigidbody2D rigidBody;
@@ -45,6 +45,7 @@ public class PlayerControl : MonoBehaviour
 
     }
 
+    //what about other platforms that aren't necessarily the ground?
     private bool IsGrounded()
     {
         return Physics2D.OverlapBox(groundCheck.position, groundCheckSize, groundLayer);
@@ -54,11 +55,11 @@ public class PlayerControl : MonoBehaviour
     {
         if (IsFacingRight && horizontal < 0f || IsFacingRight && horizontal > 0f) 
         {
-        Vector3 localScale = transform.localScale;
-        localScale.x *= -1f;
-        transform.localScale = localScale;
+            Vector3 localScale = transform.localScale;
+            localScale.x *= -1f;
+            transform.localScale = localScale;
 
-        IsFacingRight = !IsFacingRight;
+            IsFacingRight = !IsFacingRight;
         }
     }
 
