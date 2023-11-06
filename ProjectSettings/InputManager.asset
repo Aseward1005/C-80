@@ -326,11 +326,11 @@ InputManager:
     axis: 0
     joyNum: 0
   - serializedVersion: 3
-    m_Name: Debug Reset
+    m_Name: Spell4
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: left alt
+    positiveButton: j
     altNegativeButton: 
     altPositiveButton: joystick button 1
     gravity: 0
@@ -342,11 +342,11 @@ InputManager:
     axis: 0
     joyNum: 0
   - serializedVersion: 3
-    m_Name: Debug Next
+    m_Name: Spell5
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: page down
+    positiveButton: k
     altNegativeButton: 
     altPositiveButton: joystick button 5
     gravity: 0
@@ -358,11 +358,11 @@ InputManager:
     axis: 0
     joyNum: 0
   - serializedVersion: 3
-    m_Name: Debug Previous
+    m_Name: Spell6
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: page up
+    positiveButton: l
     altNegativeButton: 
     altPositiveButton: joystick button 4
     gravity: 0
