@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 14c9ff0862607a7428b89dace2d4dca8
+guid: 747f060bef533cd469a5615c154b5ccf
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,43 +110,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idleredone_0
+      name: HumanBackGood_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 232
-        height: 670
+        y: 3
+        width: 129
+        height: 653
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58e108034861fe94fb77b3163217df5e
-      internalID: -611427067
+      spriteID: 2e94ca57649e3b740892157be2b7d2ab
+      internalID: 781204530
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idleredone_1
+      name: HumanBackGood_1
       rect:
         serializedVersion: 2
-        x: 234
+        x: 130
         y: 0
-        width: 199
-        height: 670
+        width: 278
+        height: 656
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8836f52369833d54b8d0db143db71abd
-      internalID: -1631489190
+      spriteID: 1b7cdb6d11abfcc4b8bc95b8acb7c949
+      internalID: 1974124481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanBackGood_2
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 0
+        width: 176
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58c1dc6b17deb1f47b8b746a00c077f0
+      internalID: 1593725339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanBackGood_3
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 0
+        width: 184
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b65394e2fee9d4c865f72d2e21f562
+      internalID: -1937287790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanBackGood_4
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 0
+        width: 283
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba9b57bbf253c5b498c2d83de9360357
+      internalID: 283117803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanBackGood_5
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 0
+        width: 160
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2157d1b2a2145a44b7dac3ea0fcaf22
+      internalID: -1695487334
       vertices: []
       indices: 
       edges: []
@@ -162,8 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      idleredone_0: -611427067
-      idleredone_1: -1631489190
+      HumanBackGood_0: 781204530
+      HumanBackGood_1: 1974124481
+      HumanBackGood_2: 1593725339
+      HumanBackGood_3: -1937287790
+      HumanBackGood_4: 283117803
+      HumanBackGood_5: -1695487334
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

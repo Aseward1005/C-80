@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cde44d81c3562964696a87ad22ec3a82
+guid: 48bfaa0cf31528245b1d692055ee8c77
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fleshbugwalk_0
+      name: HIdleUse_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 52
         y: 0
-        width: 426
-        height: 204
+        width: 186
+        height: 673
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd709062c0071644a8a93334f5abce5c
-      internalID: 1211102240
+      spriteID: 4fcbb2cc12224e84f95d2930660e421b
+      internalID: 679032672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fleshbugwalk_1
+      name: HIdleUse_1
       rect:
         serializedVersion: 2
-        x: 432
+        x: 238
         y: 0
-        width: 427
-        height: 205
+        width: 197
+        height: 673
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,50 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bd26fff12b44d14bba627164278f20b
-      internalID: -1533940202
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fleshbugwalk_2
-      rect:
-        serializedVersion: 2
-        x: 861
-        y: 0
-        width: 407
-        height: 205
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d07d6603ea2cca34eba82cc887bcff03
-      internalID: -583038887
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fleshbugwalk_3
-      rect:
-        serializedVersion: 2
-        x: 1272
-        y: 0
-        width: 381
-        height: 205
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6cac79a0c8132f94dab10fe167ff2c8d
-      internalID: 1679735869
+      spriteID: db2bf8ea93d7b5b43ad784af5ccf73e8
+      internalID: -345567646
       vertices: []
       indices: 
       edges: []
@@ -204,10 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      fleshbugwalk_0: 1211102240
-      fleshbugwalk_1: -1533940202
-      fleshbugwalk_2: -583038887
-      fleshbugwalk_3: 1679735869
+      HIdleUse_0: 679032672
+      HIdleUse_1: -345567646
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
