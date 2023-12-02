@@ -6,7 +6,7 @@ WASD + Space to move
 
 Spells are cast with series of keys pressed in the correct order.
 Wind push = u -> i -> o
-Fireball = u -> o -> i -> j -> i -> l
+Fireball = u -> o -> j -> i -> l
 Teleport = o -> u -> l -> j
 
 for example, if I wanted to push something, I would type:
