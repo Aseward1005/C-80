@@ -441,7 +441,7 @@ GameObject:
   - component: {fileID: 600431498}
   - component: {fileID: 600431500}
   - component: {fileID: 600431502}
-  - component: {fileID: 600431501}
+  - component: {fileID: 600431503}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -546,30 +546,6 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &600431501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 600431497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40b338f7a5aa8a344935ab25f7cb6b11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 200747295}
-  speed: 8
-  jumpPower: 15
-  acceleration: 0
-  targetSpeed: 20
-  isJumping: 0
-  rigidBody: {fileID: 600431500}
-  groundCheck: {fileID: 795491075}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  groundCheckSize: {x: 0.49, y: 0.03}
 --- !u!61 &600431502
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -615,6 +591,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7, y: 1.8}
   m_EdgeRadius: 0
+--- !u!114 &600431503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600431497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d4b48ae866bee440bdde0129e298f19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 8
+  acceleration: 70
+  deacceleration: 10
+  rb: {fileID: 600431500}
 --- !u!1 &795491074
 GameObject:
   m_ObjectHideFlags: 0
