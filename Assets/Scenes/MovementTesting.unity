@@ -151,7 +151,7 @@ Transform:
   m_GameObject: {fileID: 200747293}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0026, y: 0.2617, z: 0}
+  m_LocalPosition: {x: -0.16, y: 0.35, z: 0}
   m_LocalScale: {x: 0.4324005, y: 0.26981375, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -255,6 +255,7 @@ GameObject:
   - component: {fileID: 600431500}
   - component: {fileID: 600431502}
   - component: {fileID: 600431501}
+  - component: {fileID: 600431503}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -304,7 +305,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 0.4392157}
+  m_Color: {r: 0.003921569, g: 0.003921569, b: 0.003921569, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -323,11 +324,10 @@ Transform:
   m_GameObject: {fileID: 600431497}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.46, y: -2.85, z: 0}
+  m_LocalPosition: {x: -7.5, y: -3.03, z: 0}
   m_LocalScale: {x: 2, y: 3, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 795491075}
   - {fileID: 200747294}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -346,7 +346,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 4
+  m_GravityScale: 7
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -367,17 +367,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 600431497}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40b338f7a5aa8a344935ab25f7cb6b11, type: 3}
+  m_Script: {fileID: 11500000, guid: bf7ec6ed80429cb4794e2fa2095fc0b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 200747295}
-  isJumping: 0
-  rigidBody: {fileID: 600431500}
-  groundCheck: {fileID: 1872244935}
-  groundLayer:
+  rb: {fileID: 600431500}
+  groundLayerMask:
     serializedVersion: 2
     m_Bits: 64
-  groundCheckSize: {x: 0.49, y: 0.03}
 --- !u!61 &600431502
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -387,7 +383,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 600431497}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: de4009079c837984f8079b4a40d8ae94, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -423,37 +419,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!1 &795491074
-GameObject:
+--- !u!114 &600431503
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 795491075}
-  m_Layer: 0
-  m_Name: GroundCheck
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &795491075
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 795491074}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 600431499}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 600431497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d4b48ae866bee440bdde0129e298f19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 8
+  acceleration: 70
+  deacceleration: 50
+  rb: {fileID: 600431500}
 --- !u!1 &1314041428
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,7 +606,7 @@ Transform:
   m_GameObject: {fileID: 1872244933}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.07, y: -4.67, z: 0}
+  m_LocalPosition: {x: 0.07, y: -4.95, z: 0}
   m_LocalScale: {x: 20, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

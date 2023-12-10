@@ -2933,6 +2933,7 @@ GameObject:
   - component: {fileID: 781294754}
   - component: {fileID: 781294753}
   - component: {fileID: 781294752}
+  - component: {fileID: 781294757}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2949,21 +2950,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 781294751}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40b338f7a5aa8a344935ab25f7cb6b11, type: 3}
+  m_Script: {fileID: 11500000, guid: bf7ec6ed80429cb4794e2fa2095fc0b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 1057903871}
-  speed: 8
-  jumpPower: 15
-  acceleration: 0
-  targetSpeed: 20
-  isJumping: 0
-  rigidBody: {fileID: 781294754}
-  groundCheck: {fileID: 881654521}
-  groundLayer:
+  rb: {fileID: 781294754}
+  groundLayerMask:
     serializedVersion: 2
     m_Bits: 64
-  groundCheckSize: {x: 0.49, y: 0.03}
 --- !u!61 &781294753
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2973,7 +2966,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 781294751}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: de4009079c837984f8079b4a40d8ae94, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -3106,6 +3099,22 @@ Transform:
   - {fileID: 1678552095}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &781294757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781294751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d4b48ae866bee440bdde0129e298f19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 50
+  acceleration: 70
+  deacceleration: 10
+  rb: {fileID: 781294754}
 --- !u!1 &881654520
 GameObject:
   m_ObjectHideFlags: 0
