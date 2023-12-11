@@ -2953,6 +2953,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf7ec6ed80429cb4794e2fa2095fc0b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 1057903871}
+  isJumping: 0
   rb: {fileID: 781294754}
   groundLayerMask:
     serializedVersion: 2
@@ -3111,6 +3113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d4b48ae866bee440bdde0129e298f19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 1057903871}
   speed: 8
   acceleration: 70
   deacceleration: 10

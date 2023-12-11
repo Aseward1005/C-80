@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerWalk : MonoBehaviour
 {
+    public  Animator animator;
     public float speed = 50;
     public float acceleration = 70;
     public float deacceleration = 10;
@@ -22,7 +23,7 @@ public class PlayerWalk : MonoBehaviour
    
     // Update is called once per frame
     void Update()
-    {
+    { animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
         horizontal = Input.GetAxisRaw("Horizontal");
         Turn();
     }
