@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerJump : MonoBehaviour
 
 {
-   
+   public  Animator animator;
+   public bool isJumping;
     float jumpHeight = 4;
     float gravityScale = 5;
     float fallGravityScale = 15;
@@ -30,18 +31,23 @@ public class PlayerJump : MonoBehaviour
 
     private void Update()
     {
+        animator.SetBool("isJumping",false);
+         isJumping = false;
         if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
         {
             rb.gravityScale = gravityScale;
             float jumpForce = Mathf.Sqrt(jumpHeight * (Physics2D.gravity.y * rb.gravityScale) * -2) * rb.mass;
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             jumping = true;
+            animator.SetBool("isJumping",true);
+             isJumping = true;
             buttonPressedTime = 0;
             jumpCancelled = false;
         }
 
         if (jumping)
-        {
+        { animator.SetBool("isJumping",true);
+             isJumping = true;
             buttonPressedTime += Time.deltaTime;
 
             if (buttonPressedTime < buttonPressWindow && Input.GetKeyUp(KeyCode.Space))
