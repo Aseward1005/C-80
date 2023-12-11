@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 70d8d8842d378764f8b2ffb293698871
+guid: 9bab596c3aed1fa49b8e7abd7fc21c75
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FireBall 1_0
+      name: CatFireBall_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 473
-        width: 153
-        height: 250
+        x: 7
+        y: 1000
+        width: 136
+        height: 274
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e894f3f35ac4e349b537b350cf1d1b0
-      internalID: -334359044
+      spriteID: bc5d984e6fa73404698a4bd90d98fa57
+      internalID: 2031360007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FireBall 1_1
+      name: CatFireBall_1
       rect:
         serializedVersion: 2
-        x: 194
-        y: 485
-        width: 347
-        height: 312
+        x: 155
+        y: 989
+        width: 404
+        height: 403
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 884b394058001fb42bdc3963b7609eeb
-      internalID: -1483799164
+      spriteID: d325645040205414e9fe57180d9dd2d0
+      internalID: -166370837
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FireBall 1_2
+      name: CatFireBall_2
       rect:
         serializedVersion: 2
-        x: 569
-        y: 485
-        width: 552
-        height: 523
+        x: 594
+        y: 965
+        width: 463
+        height: 504
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03cda398729568944be1c658ddb7ea21
-      internalID: 1740989838
+      spriteID: 85992eb9dbb69b4459de735e588b73a7
+      internalID: -1584115327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FireBall 1_3
+      name: CatFireBall_3
       rect:
         serializedVersion: 2
-        x: 1138
-        y: 490
-        width: 779
-        height: 665
+        x: 1093
+        y: 965
+        width: 653
+        height: 617
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5c285befe65bbf4189f7aac7e53d63e
-      internalID: 589022414
+      spriteID: f91dc9b9ae868c94d9a6a6ab3d1a5c89
+      internalID: -477460725
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FireBall 1_4
+      name: CatFireBall_4
       rect:
         serializedVersion: 2
-        x: 1928
-        y: 490
-        width: 807
-        height: 665
+        x: 1752
+        y: 959
+        width: 653
+        height: 635
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd41761ceda9a5842ac714b64b4db16c
-      internalID: -875201129
+      spriteID: f0de30c16ecafd544b9a15663e5cca81
+      internalID: -1723873230
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FireBall 1_5
+      name: CatFireBall_5
       rect:
         serializedVersion: 2
-        x: 2741
-        y: 485
-        width: 978
-        height: 670
+        x: 2423
+        y: 971
+        width: 795
+        height: 629
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d04e897d0918b254884ec83288541324
-      internalID: 1277481345
+      spriteID: c7927a0b94966284c86b875477032d4e
+      internalID: -108763106
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FireBall 1_6
+      name: CatFireBall_6
       rect:
         serializedVersion: 2
-        x: 3730
-        y: 439
-        width: 865
-        height: 716
+        x: 3230
+        y: 977
+        width: 819
+        height: 629
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,8 +250,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb063b0c6c3d795429a12b0e1730188a
-      internalID: 254391418
+      spriteID: 39862d25e446e8e4682c26e75ed83fe6
+      internalID: 1880534370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatFireBall_7
+      rect:
+        serializedVersion: 2
+        x: 4049
+        y: 977
+        width: 749
+        height: 641
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 249e7bf8521571b43abec961fd227e17
+      internalID: -2044016689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatFireBall_8
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 264
+        width: 843
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a0248dea34d8e340b6abc7026a3b4ec
+      internalID: -1191688564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatFireBall_9
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 264
+        width: 897
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa6569caa2f211a479540f7d9d6ca910
+      internalID: 1526921187
       vertices: []
       indices: 
       edges: []
@@ -267,13 +330,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      FireBall 1_0: -334359044
-      FireBall 1_1: -1483799164
-      FireBall 1_2: 1740989838
-      FireBall 1_3: 589022414
-      FireBall 1_4: -875201129
-      FireBall 1_5: 1277481345
-      FireBall 1_6: 254391418
+      CatFireBall_0: 2031360007
+      CatFireBall_1: -166370837
+      CatFireBall_2: -1584115327
+      CatFireBall_3: -477460725
+      CatFireBall_4: -1723873230
+      CatFireBall_5: -108763106
+      CatFireBall_6: 1880534370
+      CatFireBall_7: -2044016689
+      CatFireBall_8: -1191688564
+      CatFireBall_9: 1526921187
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
