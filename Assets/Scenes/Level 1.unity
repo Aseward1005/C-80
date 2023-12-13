@@ -573,7 +573,7 @@ GameObject:
   - component: {fileID: 710247437}
   - component: {fileID: 710247439}
   - component: {fileID: 710247438}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2990,11 +2990,11 @@ TilemapCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
+  m_LayerOverridePriority: 10
   m_ForceSendLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -3047,7 +3047,7 @@ CompositeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_GeometryType: 0
+  m_GeometryType: 1
   m_GenerationType: 0
   m_EdgeRadius: 0
   m_ColliderPaths:
@@ -3163,7 +3163,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 710247433}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -3347,10 +3347,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1057903871}
   isJumping: 0
+  jumping: 0
   rb: {fileID: 781294754}
   groundLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
 --- !u!61 &781294753
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3505,10 +3506,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d4b48ae866bee440bdde0129e298f19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerJump: {fileID: 781294752}
   animator: {fileID: 1057903871}
   speed: 8
   acceleration: 70
   deacceleration: 50
+  sprite: {fileID: 0}
   rb: {fileID: 781294754}
 --- !u!1 &881654520
 GameObject:

@@ -14,10 +14,11 @@ public class PlayerJump : MonoBehaviour
 
     float buttonPressWindow = 0.3f;
     float buttonPressedTime;
-    bool jumping;
+    public bool jumping;
     bool jumpCancelled;
     private BoxCollider2D bc;
 
+  
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private LayerMask groundLayerMask;
  
@@ -32,28 +33,30 @@ public class PlayerJump : MonoBehaviour
     private void Update()
     {
         animator.SetBool("isJumping",false);
-         isJumping = false;
+        isJumping = false;
         if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
         {
             rb.gravityScale = gravityScale;
             float jumpForce = Mathf.Sqrt(jumpHeight * (Physics2D.gravity.y * rb.gravityScale) * -2) * rb.mass;
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             jumping = true;
-            animator.SetBool("isJumping",true);
-             isJumping = true;
+            animator.SetBool("isJumping", true);
+            isJumping = true;
             buttonPressedTime = 0;
             jumpCancelled = false;
         }
 
         if (jumping)
-        { animator.SetBool("isJumping",true);
-             isJumping = true;
+        { 
+            //animator.SetBool("isJumping",true);
+            //isJumping = true;
             buttonPressedTime += Time.deltaTime;
 
             if (buttonPressedTime < buttonPressWindow && Input.GetKeyUp(KeyCode.Space))
             {
                 jumpCancelled = true;
-                
+                animator.SetBool("isJumping", false);
+                isJumping = false;
             }
 
             if (rb.velocity.y < 0)
@@ -92,5 +95,6 @@ public class PlayerJump : MonoBehaviour
         //Debug.DrawRay(bc.bounds.center - new Vector3(bc.bounds.extents.x, bc.bounds.extents.x, 0), Vector2.right * (bc.bounds.extents.x), rayColor);
         Debug.Log(raycastHit.collider);
         return raycastHit.collider != null;
+        
     }  
 }
