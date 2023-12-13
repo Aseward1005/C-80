@@ -77,10 +77,6 @@ public class PlayerJump : MonoBehaviour
 
     private bool IsGrounded()
     {
-        //Physics2D.BoxCast(bc.bounds.center, bc.bounds.size, 0f, Vector2.down, 0.1f, )
-        
-        
-        
         float extraHeightTest = 1f;
         RaycastHit2D raycastHit  = Physics2D.BoxCast(bc.bounds.center, bc.bounds.size, 0f, Vector2.down, extraHeightTest, groundLayerMask);
         Color rayColor;
