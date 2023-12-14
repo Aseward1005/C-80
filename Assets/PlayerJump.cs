@@ -7,16 +7,16 @@ public class PlayerJump : MonoBehaviour
 {
    public  Animator animator;
    public bool isJumping;
-    float jumpHeight = 8;
-    float gravityScale = 5;
-    float fallGravityScale = 15;
-    float cancelRate = 100;
+   public float jumpHeight = 4;
+   public float gravityScale = 5;
+   public float fallGravityScale = 15;
+   public float cancelRate = 100;
 
-    float buttonPressWindow = 0.3f;
-    float buttonPressedTime;
-    public bool jumping;
-    bool jumpCancelled;
-    private BoxCollider2D bc;
+   public float buttonPressWindow = 0.3f;
+   public float buttonPressedTime;
+   public bool jumping;
+   bool jumpCancelled;
+   private BoxCollider2D bc;
 
   
     [SerializeField] private Rigidbody2D rb;
