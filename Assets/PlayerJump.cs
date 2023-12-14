@@ -7,7 +7,7 @@ public class PlayerJump : MonoBehaviour
 {
    public  Animator animator;
    public bool isJumping;
-    float jumpHeight = 4;
+    float jumpHeight = 8;
     float gravityScale = 5;
     float fallGravityScale = 15;
     float cancelRate = 100;
