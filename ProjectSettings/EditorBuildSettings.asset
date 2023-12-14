@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 3.unity
     guid: c6ff9cb83a1a3fa4680b7585e7bbc618
+  - enabled: 1
+    path: Assets/Scenes/MovementTesting.unity
+    guid: 95a85a5dc8390e241980649cd97c4ed3
   m_configObjects: {}
