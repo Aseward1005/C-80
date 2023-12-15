@@ -18,5 +18,8 @@ ouljuio
 If I wanted to throw a fireball, then push something, then teleport, I would type:
 uojiluiooulj
 
-Members
-Victoria Marcial -sprites and assets   
+Members:
+
+Anthony Seward - Programming: Level design and logic, playtesting, spellcasting
+
+Victoria Marcial - Artist: sprites and assets   
