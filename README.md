@@ -25,3 +25,5 @@ Anthony Seward - Programming: Level design and logic, playtesting, spellcasting
 Victoria Marcial - Artist: sprites and assets
 
 Rida Siddiqui - Programming: Player movement; A bit of level design using the Unity asset store.
+
+https://yawgmoth.github.io/C80Build/
